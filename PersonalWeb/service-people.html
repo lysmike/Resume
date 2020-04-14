@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike's Service-People</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/plugin/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/plugin/animate.css">
+    <link rel="stylesheet" href="css/workStyle.css">
+    <style>
+        .accordion{
+            height: 500px;
+            border:1px solid #ccc;
+            background-color: #fff;
+        }
+        .accordion a{
+            cursor: pointer;
+            background: orange;
+            border:1px solid orangered;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+        .accordion a:hover, .accordion a.active{
+            background: orangered;
+            color:#fff;
+        }
+        .content{
+            transition: .5s;
+            overflow: hidden;
+            max-width:0;
+        }
+        .content.active{
+            flex:1;
+            max-width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="#top" class="top">TOP</a>
+         <!-- Start Side-menu -->
+         <ul id="js-menu" class="side-nav">
+            <li class="active js-1"><a href="#top" class="side-nave__item"><span>P</span></a></li>
+            <li class="js-2"><a href="#single" class="side-nave__item"><span>E</span></a></li>
+            <li  class="js-3"><a href="#couple" class="side-nave__item"><span>O</span></a></li>
+            <li  class="js-4"><a href="#muti" class="side-nave__item"><span>P</span></a></li>
+            <li class="js-5"><a href="#pets" class="side-nave__item"><span>L</span></a></li>
+            <li class="js-6"><a href="#contact" class="side-nave__item"><span>E</span></a></li>
+        </ul>
+        <!-- End Side-menu -->
+
+        <!-- Start Header -->
+        <header class="header">
+            <div class="container">
+                <div class="navBar d-flex justify-content-between">
+                    <a href="index.html" class="nav-logo"></a>
+                    <ul class="nav-menu d-flex align-items-center">
+                        <li class="menu__item"><a href="work.html#about">About</a></li>
+                        <li class="menu__item"><a href="work.html#service">Service</a></li>
+                        <li class="menu__item"><a href="work.html#gallery">Gallery</a></li>
+                        <li class="menu__item"><a href="work.html#UIdesign">UI Design</a></li>
+                        <li class="menu__item"><a href="work.html#contact">Contact</a></li>
+                        <div class="nav-iconGroup">
+                            <a class="icon-btn wow bounceIn" data-wow-delay="0.3s" href="https://www.facebook.com/LYS.MikePhoto/?modal=admin_todo_tour" target="_blank" title="Facebook">
+                                <i class="icon icon-facebook-rect"></i>
+                            </a
+                            ><a class="icon-btn wow bounceIn" data-wow-delay="0.6s" href="https://www.flickr.com/photos/101364297@N07/albums" target="_blank" title="Flickr">
+                                <i class="icon icon-camera-1"></i>
+                            </a
+                            ><a class="icon-btn wow bounceIn" data-wow-delay="0.9s" href="https://www.instagram.com/lys_mike.photography/?hl=zh-tw" target="_blank" title="instagram">
+                                <i class="icon icon-instagram-1"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Gallery-people -->
+        <div class="Gallery-people" id="top">
+            <div class="Section container">
+                <div class="row">
+                    <div class="info col-6">
+                        <h2 class="info__title color-white">Service - People</h2>
+                        <h3 class="info__subtitle">LYS Studio</h3>
+                    </div>
+                    <div class="thumbnails d-flex flex-wrap">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <a href="#single">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/10/photo_022.jpg" alt="">
+                                </div>
+                            </a>
+                            <a href="#single">
+                                <h5 class="thumbnail__title">Single Person</h5>
+                            </a>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnails d-flex flex-wrap">
+                            <div class="thumbnail">
+                                <a href="#couple">
+                                    <div class="imgbox thumbnail__imgbox">
+                                        <img class="image" src="images/photoWorks/couple/photo_057.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#couple">
+                                    <h5 class="thumbnail__title">Couple</h5>
+                                </a>
+                                <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                            </div>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnails d-flex flex-wrap">
+                            <div class="thumbnail">
+                                <a href="#muti">
+                                    <div class="imgbox thumbnail__imgbox">
+                                        <img class="image" src="images/photoWorks/family/DSC09270.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#muti">
+                                    <h5 class="thumbnail__title">Muti People</h5>
+                                </a>
+                                <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                            </div>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnails d-flex flex-wrap">
+                            <div class="thumbnail">
+                                <a href="#pets">
+                                    <div class="imgbox thumbnail__imgbox">
+                                        <img class="image" src="images/photoWorks/pets/6.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#pets">
+                                    <h5 class="thumbnail__title">Pets</h5>
+                                </a>
+                                <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Gallery-people -->
+
+        <!-- Start Single -->
+        <div class="Single bg-color-grey" id="single">
+            <div class="Section container">
+                <div class="row">
+                    <div class="info">
+                        <h2 class="info__title color-white">Single Person</h2>
+                        <h3 class="info__subtitle">Got a special one for you!</h3>
+                    </div>
+                    <div class="thumbnails d-flex flex-wrap">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/tiffany/photo_008.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">個人藝術照</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnails d-flex flex-wrap">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <div class="imgbox thumbnail__imgbox">
+                                        <img class="image" src="images/photoWorks/city/DSC00982.jpg" alt="">
+                                    </div>
+                                </a>
+                                <h5 class="thumbnail__title">個人藝術照</h5>
+                                <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                            </div>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnails d-flex flex-wrap">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <div class="imgbox thumbnail__imgbox">
+                                        <img class="image" src="images/photoWorks/53/photo_046.jpg" alt="">
+                                    </div>
+                                </a>
+                                <h5 class="thumbnail__title">個人藝術照</h5>
+                                <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                            </div>
+                        </div>
+                         <!-- thumbnail -->
+                         <div class="thumbnails d-flex flex-wrap">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <div class="imgbox thumbnail__imgbox">
+                                        <img class="image" src="images/photoWorks/anna/photo_021.jpg" alt="">
+                                    </div>
+                                </a>
+                                <h5 class="thumbnail__title">個人藝術照</h5>
+                                <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container accordion d-flex p-0 my-3" id="accordion">
+                    <a class="d-block p-3 active">
+                        Price - 價目
+                    </a>
+                    <div class="content active">
+                        <p class="p-3">
+                            單日拍攝5小時 / 12000元
+
+                            （含彩妝造型及車程時間） <br><br>
+                            
+                            單日拍攝8小時/ 16000元
+                            
+                            （含彩妝造型及車程時間）
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        Process - 婚紗自主流程
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            1. 確定自己的想法，忠於自己的需求找尋適合的婚紗及攝影師<br>
+
+                            2. 與攝影師初步溝通拍攝內容，聽取建議並了解拍攝難易度後詢問拍攝日期<br>
+                            
+                            3. 尋找符合內容之拍攝禮服，試穿及了解價格，並與攝影師確定是否符合設定內容<br>
+                            
+                            4. 選擇自己想要的消費方式後挑選衣服<br>
+                            
+                            5. 第二次與攝影師、彩妝師會面，確定實際拍攝內容<br>
+                            （風格/地點/流程等細節）<br>
+                            
+                            6. 執行拍攝，拍攝後約一個月取毛片<br>
+                            
+                            7. 選取影像進行修片與編排<br>
+                            
+                            8. 完件＆取件並確認內容<br>
+                            ​
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        Portait - 人像攝影
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                               
+                                    加時拍攝費用2000/hr
+                                    彩妝師恕不指定
+                                    不包含禮服道具等
+                                    拍攝時間從做造型開始計算
+                                
+                                    <br> 【成品內容】<br>
+                                    風格後製調色相片檔案
+                                    （全數調整光影、白平衡）
+                                    給予當日全部拍攝的千萬像素檔案
+                                    20組 / 30組精修檔
+                                
+                                    <br> 【其他備註】<br>
+                                    檔案以雲端下載提供
+                                    不包含相簿週邊
+                                    拍攝完成至取檔須一個月，取檔後挑片至完成時間需一個月
+                                    如需快速取件，一個月內需增加急件費用3000元
+                                    拍攝照片張數，以拍攝時數＆配合度而定
+                                
+                                    <br>  【著作聲明】 <br>
+                                    不販售RAW檔及調色參數，請勿再詢問
+                                    請勿將檔案重置或再次調色，並於公開平台或場合曝光，如有喜愛調色風格可先行溝通，若有此行為已涉及侵權
+                                    如不希望影像公開至網路或網站，請先行告知及聲明，因作品均有可能會在社交網站及個人網頁呈現
+                               
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        Notice - 婚紗拍攝注意事項
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            <br>【拍攝】 <br>
+                            若天候狀況不佳，以延期作為考量
+                            若新人仍想如期拍攝，以當日拍攝完為主
+                            拍攝內容以溝通當天群組記事本裡的資料為主
+                            若要調整拍攝內容，請事先跟攝影師溝通
+                            在拍攝婚紗之流程並不會配合動態錄影的拍攝流程，除非是合作夥伴或已溝通並瞭解拍攝流程
+                            謝絕親友跟拍，如有需求請務必事先告知及溝通
+                            拍攝完成至取毛片需一個月，挑片完成至完件需一個月，正常工作時間約為兩個月（拍攝完畢到交件），急件處理請先告知，趕件須加收費用6000元
+                            <br>【修片】 <br>
+                            修片師進行修片並依客人所提供之修片片號及附註內容進行修片
+                            如有任何問題必須在做部分修片，可通知我方進行修改，修改次數不得超過2次，修片後不得復原
+                            修片只修飾合理範圍，如：皮膚、紋路、明暗、身材略微調整、髒污等等
+                            空間配置、衣服皺褶、天氣狀況、返老還童、微血管、彩妝髮型一律不在修片範圍
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Single -->
+
+        <!-- Start Couple -->
+        <div class="Couple" id="couple">
+            <div class="Section container">
+                <div class="row">
+                    <div class="info">
+                        <h2 class="info__title color-white">Couple</h2>
+                        <h3 class="info__subtitle">Got a special one for you!</h3>
+                    </div>
+                    <div class="thumbnails d-flex flex-wrap">
+                       <!-- thumbnail -->
+                       <div class="thumbnail">
+                        <a href="#">
+                            <div class="imgbox thumbnail__imgbox">
+                                <img class="image" src="images/photoWorks/others/photo_006.jpg" alt="">
+                            </div>
+                        </a>
+                        <h5 class="thumbnail__title">情侶婚紗</h5>
+                        <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                    </div>
+                    <!-- thumbnail -->
+                    <div class="thumbnails d-flex flex-wrap">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/others/photo_002.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">情侶婚紗</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                    </div>
+                     <!-- thumbnail -->
+                     <div class="thumbnails d-flex flex-wrap">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/couple/photo_008.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">情侶婚紗</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                    </div>
+                    <!-- thumbnail -->
+                    <div class="thumbnails d-flex flex-wrap">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/couple-an/823A2801-2.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">情侶婚紗</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container accordion d-flex p-0 my-3" id="accordion">
+                    <a class="d-block p-3 active">
+                        jQuery
+                    </a>
+                    <div class="content active">
+                        <p class="p-3">
+                        jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        CSS
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        HTML
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        PHP
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            PHP: Hypertext Preprocessor (or simply PHP) is a server-side scripting language designed for Web development, but also used as a general-purpose programming language. It was originally created by Rasmus Lerdorf in 1994, the PHP reference implementation is now produced by The PHP Group. PHP originally stood for Personal Home Page, but it now stands for the recursive acronym PHP: Hypertext Preprocessor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Couple -->
+        
+        <!-- Start Muti -->
+        <div class="Muti bg-color-grey" id="muti">
+            <div class="Section container">
+                <div class="row">
+                    <div class="info">
+                        <h2 class="info__title color-white">Muti People</h2>
+                        <h3 class="info__subtitle">Got a special one for you!</h3>
+                    </div>
+                    <div class="thumbnails d-flex flex-wrap">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/wedding/photo_13.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">合照</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnails d-flex flex-wrap">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <div class="imgbox thumbnail__imgbox">
+                                        <img class="image" src="images/photoWorks/family/DSC09132.jpg" alt="">
+
+                                    </div>
+                                </a>
+                                <h5 class="thumbnail__title">全家福</h5>
+                                <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                            </div>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnails d-flex flex-wrap">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <div class="imgbox thumbnail__imgbox">
+                                        <img class="image" src="images/photoWorks/family/DSC09426.jpg" alt="">
+                                    </div>
+                                </a>
+                                <h5 class="thumbnail__title">大頭貼</h5>
+                                <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container accordion d-flex p-0 my-3" id="accordion">
+                    <a class="d-block p-3 active">
+                        jQuery
+                    </a>
+                    <div class="content active">
+                        <p class="p-3">
+                        jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        CSS
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        HTML
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        PHP
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            PHP: Hypertext Preprocessor (or simply PHP) is a server-side scripting language designed for Web development, but also used as a general-purpose programming language. It was originally created by Rasmus Lerdorf in 1994, the PHP reference implementation is now produced by The PHP Group. PHP originally stood for Personal Home Page, but it now stands for the recursive acronym PHP: Hypertext Preprocessor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Muti -->
+
+        <!-- Start Pets -->
+        <div class="Pets" id="pets">
+            <div class="Section container">
+                <div class="row">
+                    <div class="info">
+                        <h2 class="info__title color-white">Pets</h2>
+                        <h3 class="info__subtitle">Got a special one for you!</h3>
+                    </div>
+                    <div class="thumbnails d-flex flex-wrap">
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/pets/6.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">QB</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/pets/8.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">QB</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                        <!-- thumbnail -->
+                        <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/pets/12.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">QB</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                         <!-- thumbnail -->
+                         <div class="thumbnail">
+                            <a href="#">
+                                <div class="imgbox thumbnail__imgbox">
+                                    <img class="image" src="images/photoWorks/pets/14.jpg" alt="">
+                                </div>
+                            </a>
+                            <h5 class="thumbnail__title">QB</h5>
+                            <p class="thumbnail__text col-11">But rudeness, Mr. Browne says, is just one of the things he has to deal with. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container accordion d-flex p-0 my-3" id="accordion">
+                    <a class="d-block p-3 active">
+                        jQuery
+                    </a>
+                    <div class="content active">
+                        <p class="p-3">
+                        jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        CSS
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        HTML
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.
+                        </p>
+                    </div>
+                    <a class="d-block p-3">
+                        PHP
+                    </a>
+                    <div class="content">
+                        <p class="p-3">
+                            PHP: Hypertext Preprocessor (or simply PHP) is a server-side scripting language designed for Web development, but also used as a general-purpose programming language. It was originally created by Rasmus Lerdorf in 1994, the PHP reference implementation is now produced by The PHP Group. PHP originally stood for Personal Home Page, but it now stands for the recursive acronym PHP: Hypertext Preprocessor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pets -->
+
+        <!-- Start Contact -->
+        <div class="Contact bg-color-grey" id="contact">
+            <div class="contactSection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="info">
+                                <h2 class="info__title">CONTACT</h2>
+                                <h3 class="info__subtitle">Letʼs go and see !</h3>
+                                <p class="info__text text-start">As the competition heats up, Amazon and others will be relying on drivers like Mr. Browne, who makes $13 an hour, plus tips, to handle the biggest challenges of succeeding in the online grocery business.</p>
+                            </div>
+                            <div class="contact">
+                                <div class="contact__item">
+                                    <h5 class="contact__label">Email</h5>
+                                    <a href="#" class="contact__link">minipmike@gmail.com</a>
+                                </div>
+                                <div class="contact__item">
+                                    <h5 class="contact__label">Tel</h5>
+                                    <a href="#" class="contact__link">0933287660</a>
+                                </div>
+                                <div class="contact__item">
+                                    <h5 class="contact__label">Address</h5>
+                                    <a href="#" class="contact__link">Taipei, Taiwan (R.O.C.)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 right-1 ">
+                            <div class="d-container d-container-contact">
+                                <div class="frame">
+                                    <div class="frame__inner"></div>
+                                </div>
+                                <img class="image" src="images/photoWorks/pets/10.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+
+        <!-- Start Footer -->
+        <footer class="footer bg-color-black">
+            <div class="container">
+                <div class="divide-text wow fadeIn">or</div>
+            <div class="info">
+                <div class="info__email wow bounceInUp">
+                    <a href="mailTo:minipmike@gmail.com">minipmike@gmail.com</a>
+                </div>
+                <div class="info__phone wow bounceInUp">
+                    <a href="tel:0933287660">0933287660</a>
+                </div>
+                <div class="socialBar navBar__socialBar">
+                    <a class="icon-btn wow bounceIn" data-wow-delay="0.3s" href="https://www.facebook.com/LYS.MikePhoto/?modal=admin_todo_tour" target="_blank" title="Facebook">
+                        <i class="icon icon-facebook-rect"></i>
+                    </a
+                    ><a class="icon-btn wow bounceIn" data-wow-delay="0.6s" href="https://www.flickr.com/photos/101364297@N07/albums" target="_blank" title="Flickr">
+                        <i class="icon icon-camera-1"></i>
+                    </a
+                    ><a class="icon-btn wow bounceIn" data-wow-delay="0.9s" href="https://www.instagram.com/lys_mike.photography/?hl=zh-tw" target="_blank" title="instagram">
+                        <i class="icon icon-instagram-1"></i>
+                    </a>
+                </div>
+            </div>
+                <p class="final-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea, voluptate.</p>
+                <p class="copyright">Copyright © 2020 LYS-Mike Photo + UI/UX Web Design</p>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+
+    <!-- JS -->
+    <script src="js/plugin/jquery-2.0.2.min.js"></script>
+    <script src="js/plugin/wow.min.js"></script>
+    <script src="js/plugin/jquery.fancybox.js"></script>
+    <!-- <script src="js/plugin/jquery.stellar.js"></script> -->
+    <script src="js/costum.js"></script>
+</body>
+</html>

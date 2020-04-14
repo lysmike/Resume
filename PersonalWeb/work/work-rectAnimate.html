@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>    
+    <title>Work-rectAnimation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: #484848;
+        }
+        .box{
+            margin-top: 30vh;
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: #fefefe;
+            box-shadow: 3px 3px 10px  rgba(0,0,0,.5);
+
+            animation: rotate 5s infinite linear;
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 3px inset rgba(0,0,0,.5);
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%); 
+            animation: rotate 10s infinite ease;
+        }
+        .ball1{
+            animation: move 1.3s .5s infinite reverse both linear;
+        }
+        .ball2{
+            animation: move 1.5s .3s infinite reverse both linear;
+        }
+        .ball3{
+            animation: move 1.5s .1s infinite reverse both linear;
+        }
+        .box:hover{
+                animation-play-state: paused;
+        }
+        @keyframes move{
+            0%{
+                left: 0;
+                background-color: red;
+            }25%{
+                left:50%; 
+                top:calc(100% - 50px);
+                transform: translateX(-50%);
+                background-color: blue;
+            }50%{
+                left:calc(100% - 50px);
+                top:50%;
+                transform: translateY(-50%);
+                background-color: green;
+            }75%{
+                left:50%; 
+                top:0;
+                transform: translateX(-50%);
+                background-color: yellow;
+            }100%{
+                left: 0;
+                background-color: inherit;
+            }
+        }
+        
+    </style>
+</head>
+  <body>
+      <div class="wrapper d-flex justify-content-center">
+          <div class="box">
+              <div class="ball ball1"></div>
+              <div class="ball ball2"></div>
+              <div class="ball ball3"></div>
+          </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

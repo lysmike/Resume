@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon-2020031012124787.ico" />
+    <title>Mike's Resume</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/plugin/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/plugin/animate.css">
+    <link rel="stylesheet" href="css/component.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Start bg -->
+        <div class="bg bg5"></div>
+        <!-- End bg -->
+
+         <!-- Start header -->
+         <div class="globalWrap--fixed">
+            <div class="progressBar"></div> 
+            <div class="container">
+                <div id="popup-overlay" class="popup-menu">
+                    <div class="container d-flex justify-content-end">
+                        <a href="#" class="popup-menu__close">
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <ul class="popup-nav">
+                        <li><a href="#about" class="popup-menu__item">ABOUT</a></li>
+                        <li><a href="#skill" class="popup-menu__item">SKILL</a></li>
+                        <li><a href="#experience" class="popup-menu__item">EXPERIENCE</a></li>
+                        <li><a href="#work" class="popup-menu__item">WORK</a></li>
+                        <li><a href="#contact" class="popup-menu__item">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <header class="header js-header ">
+            <div class="container">
+                <div class="navBar d-flex justify-content-between navBar--collapse">
+                    <div class="logo">
+                        <div class="imgBox">
+                            <div class="imgBox_inner imgBox_inner--4-1">
+                                <a href="work.html">
+                                    <img class="image" src="images/lys_w.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navBar__socialBar">
+                        <a class="icon-btn wow bounceIn" data-wow-delay="0.3s" href="https://www.facebook.com/LYS.MikePhoto/?modal=admin_todo_tour" target="_blank" title="Facebook">
+                            <i class="icon icon-facebook-rect"></i>
+                        </a
+                        ><a class="icon-btn wow bounceIn" data-wow-delay="0.6s" href="https://www.flickr.com/photos/101364297@N07/albums" target="_blank" title="Flickr">
+                            <i class="icon icon-camera-1"></i>
+                        </a
+                        ><a class="icon-btn wow bounceIn" data-wow-delay="0.9s" href="https://www.instagram.com/lys_mike.photography/?hl=zh-tw" target="_blank" title="instagram">
+                            <i class="icon icon-instagram-1"></i>
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <a href="#popup-overlay" class="menu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End header -->
+
+        <!-- Start leadingHead -->
+        <section class="leadingHead" id="home">
+            <div class="leading__bg"></div>
+            <div class="container leadingSection">
+                <div class="content wow bounceInLeft" data-wow-delay=".3s">
+                    <h1 class="leadingHead__heading">Hello,<br> I'm Mike!</h1>
+                    <a href="#contact" class="btn btn--primary btn--md">Contact</a>
+                </div>
+            </div>
+        </section>
+        <!-- End leadingHead -->
+                
+        <!-- Start bg1 -->
+        <div class="bg bg1">
+            <!-- Start About -->
+            <section class="about" id="about">
+                <div class="container aboutSection">
+                   
+                    <h2 class="subtitle color-white wow bounceInUp">About</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 ">
+                            <div class="about__content ">
+                                <div class="about__icon">
+                                    <i class="icon icon-star"></i>
+                                </div>
+                                <div class="d-flex justify-content-center pt-5">
+                                    <ul class="about__text ">
+                                        <li class="text-start">人像攝影（婚紗 / 個人 / 家庭/ 情侶 / 閨蜜） </li>
+                                        <li class="text-start"> 活動紀錄（婚禮 / 派對 / 畢業）</li>
+                                        <li class="text-start"> 商業攝影（商品 / 食物）</li>
+                                        <li class="text-start"> 空間攝影（室內 / 戶外）</li>
+                                        <li class="text-start">其他攝影（寵物 / 修圖）</li>
+                                    </ul>
+                                </div>
+                                
+                                <p class="about__name d-flex justify-content-around right-3">
+                                    <span>Somebody - from somewhere</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About -->
+        </div>
+        <!-- End bg1 -->
+                
+        <!-- Start Skill -->
+        <section class="skill text-center" id="skill">
+            <div class="container skillSection">
+                <h2 class="subtitle wow bounceInUp">Skill</h2>
+                <div class="skill-group">
+                    <div class="row">
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay=".2s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Photo</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates. </p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/Photo-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay=".4s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Ps</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates. </p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/ps-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay=".6s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Ai</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates. </p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/ai-icon.jpeg" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay=".8s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Lr</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates.</p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/lr-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn " data-wow-delay="1s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Html</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates. </p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/html-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay="1.2s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Css</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates.</p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/css-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay="1.2s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">JavaScript</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates.</p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/js-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay="1s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">jQuerry</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates.</p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/jq-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay=".8s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">php</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates.</p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/php-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay=".6s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Canvas</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates. </p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/canvas-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay=".4s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Sketch</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates.</p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/sketch-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                        <!-- skill-card -->
+                        <div class="skill-card col-2 wow bounceIn" data-wow-delay=".2s">
+                            <div class="skill-card__inner">
+                                <h4 class="skill-card__title">Vue</h4>
+                                <p class="skill-card__text">Lorem ipsum dolor elit. Porro quidem illo qui, fuga tempor veritatis voluptates.</p>
+                            </div>
+                            <div class="skill-card__icon">
+                                <img src="images/skill_icon/vue-icon.png" alt="" class="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Skill -->
+
+        <!-- Start bg0 -->
+        <div class="bg bg0">
+        <!-- Start Experience -->
+        <section class="experience" id="experience">
+            <div class="container experienceSection">
+                <h2 class="subtitle color-white py-3 wow bounceInUp">Experience</h2>
+                <div class="timeLine-group">
+                    <div class="timeLine"></div>
+                    <div class="timeLineCards d-flex justify-content-between flex-wrap align-items-start">
+                        <!-- timeLineCard -->
+                        <div class="timeLineCard wow bounceInRight" data-wow-delay=".3s">
+                            <div class="timeLineCard__title">高雄應用科技大學(資訊)</div>
+                            <p class="timeLineCard__text">2011.9 - 2015.6</p>
+                        </div>
+                        <!-- timeLineCard -->
+                        <div class="timeLineCard wow bounceInLeft" data-wow-delay=".6s">
+                            <div class="timeLineCard__title">消防替代役</div>
+                            <p class="timeLineCard__text">2015.10 - 2016.9</p>
+                        </div>
+                        <!-- timeLineCard -->
+                        <div class="timeLineCard wow bounceInRight" data-wow-delay=".9s">
+                            <div class="timeLineCard__title">貓館 - 寵物保姆</div>
+                            <p class="timeLineCard__text">2016.9 - 2017.2</p>
+                        </div>
+                        <!-- timeLineCard -->
+                        <div class="timeLineCard wow bounceInLeft" data-wow-delay="1.2s">
+                            <div class="timeLineCard__title">蘿亞結婚精品-燈光師</div>
+                            <p class="timeLineCard__text">2017.3-2019.2</p>
+                        </div>
+                        <!-- timeLineCard -->
+                        <div class="timeLineCard wow bounceInRight" data-wow-delay="1.5s">
+                            <div class="timeLineCard__title">攝影師</div>
+                            <p class="timeLineCard__text">2019.3 - Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Experience -->
+        </div>
+        <!-- End bg0 -->
+
+        <!-- Start Work -->
+        <section class="work" id="work">
+            <div class="container workSection">
+                <h2 class="subtitle text-center color-black bg-color-white wow bounceInUp">My Works</h2>
+                <div class="work-list ">
+                    <!-- item -->
+                    <div class="work-item d-flex wow fadeInUp" data-wow-delay=".2s">
+                        <div class="imgBox right-1">
+                            <div class="imgBox-inner imgBix-inner--4-3">
+                                <a href="images/works/work001.jpg" data-fancybox="works">
+                                    <img src="images/works/work001.jpg" alt="" class="image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-content ">
+                            <h3 class="work-item__title right-2 ">Photography</h3>
+                            <p class="work-item__text right-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nulla tempora totam!</p>
+                            <a href="work.html#service" class="text-btn text-btn--primary text-btn--lg right-9">Show Project</a>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="work-item d-flex wow fadeInUp right-3" data-wow-delay=".3s">
+                        <div class="imgBox right-1">
+                            <div class="imgBox-inner imgBix-inner--4-3">
+                                <a href="images/works/work002.jpg" data-fancybox="works">
+                                    <img src="images/works/work002.jpg" alt="" class="image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-item__title right-2">UI Web Design</h3>
+                            <p class="work-item__text col-11 right-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nulla tempora totam!</p>
+                            <a href="work.html" class="text-btn text-btn--primary text-btn--lg right-9">Show Project</a>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="work-item d-flex wow fadeInUp right-1" data-wow-delay=".4s">
+                        <div class="imgBox right-1">
+                            <div class="imgBox-inner imgBix-inner--4-3">
+                                <a href="images/works/work003.jpg" data-fancybox="works">
+                                    <img src="images/works/work003.jpg" alt="" class="image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-content right-2">
+                            <h3 class="work-item__title">Work title for good design stuff</h3>
+                            <p class="work-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nulla tempora totam!</p>
+                            <a href="work.html" class="text-btn text-btn--primary text-btn--lg right-9">Show Project</a>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="work-item d-flex wow fadeInUp">
+                        <div class="imgBox right-7">
+                            <div class="imgBox-inner imgBix-inner--4-3" data-wow-delay=".5s">
+                                <a href="images/works/work004.jpg" data-fancybox="works">
+                                    <img src="images/works/work004.jpg" alt="" class="image">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-content left-2">
+                            <h3 class="work-item__title">Work title for good design stuff</h3>
+                            <p class="work-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nulla tempora totam!</p>
+                            <a href="work.html#contact" class="text-btn text-btn--primary text-btn--lg right-5">Show Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Work -->
+            
+        <!-- Start bg3 -->
+        <div class="bg bg3">
+        <!-- Start Contact -->
+        <section class="contact" id="contact">
+            <div class="container contactSection">
+                <!-- <h2 class="subtitle color-white text-center">Contact</h2> -->
+                <div class="card d-flex justify-content-between flex-wrap align-items-start wow fadeIn" data-wow-delay=".3s">
+                        <div class="col-6">
+                            <h2 class="heading wow bounceInUp">Contact</h2>
+                            <p class="message">We are open for any suggestion or just to have a chat</p>
+                        </div>
+                    <form action="" class="form col-6"  >
+                        <div class="d-flex">
+                            <div class="input-container pr-1 ">
+                                <input class="text" type="text">
+                                <label for="" class="label-text">Name</label>
+                            </div>
+                            <div class="input-container">
+                                <input class="text" type="tel">
+                                <label for="" class="label-text">Phone</label>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input class="text" type="email">
+                            <label for="" class="label-text">E-mail</label>
+                        </div>
+                        <div class="input-container">
+                            <textarea class="resize-none text" style="height: 180px;"></textarea>
+                            <label for="" class="label-text">Message</label>
+                            <div class="text-center pt-3">
+                                <input class="btn btn--primary" type="submit" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+        </div>
+        <!-- End bg3 -->
+
+        <!-- Start Footer -->
+        <footer class="footer bg-color-black">
+            <div class="container">
+                <div class="divide-text wow fadeIn">or</div>
+            <div class="info">
+                <div class="info__email wow bounceInUp">
+                    <a href="mailTo:minipmike@gmail.com">minipmike@gmail.com</a>
+                </div>
+                <div class="info__phone wow bounceInUp">
+                    <a href="tel:0933287660">0933287660</a>
+                </div>
+                <div class="socialBar navBar__socialBar">
+                    <a class="icon-btn wow bounceIn" data-wow-delay="0.3s" href="https://www.facebook.com/LYS.MikePhoto/?modal=admin_todo_tour" target="_blank" title="Facebook">
+                        <i class="icon icon-facebook-rect"></i>
+                    </a
+                    ><a class="icon-btn wow bounceIn" data-wow-delay="0.6s" href="https://www.flickr.com/photos/101364297@N07/albums" target="_blank" title="Flickr">
+                        <i class="icon icon-camera-1"></i>
+                    </a
+                    ><a class="icon-btn wow bounceIn" data-wow-delay="0.9s" href="https://www.instagram.com/lys_mike.photography/?hl=zh-tw" target="_blank" title="instagram">
+                        <i class="icon icon-instagram-1"></i>
+                    </a>
+                </div>
+            </div>
+                <p class="final-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea, voluptate.</p>
+                <p class="copyright">Copyright © 2020 LYS-Mike Photo + UI/UX Web Design</p>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+
+    <!-- JS -->
+    <script src="js/plugin/jquery-2.0.2.min.js"></script>
+    <script src="js/plugin/wow.min.js"></script>
+    <script src="js/plugin/jquery.fancybox.js"></script>
+    <script src="js/plugin/jquery.stellar.js"></script>
+    <script src="js/costum.js"></script>
+</body>
+</html>
